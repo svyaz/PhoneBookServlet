@@ -34,7 +34,10 @@ public class AddContactServlet extends HttpServlet {
 
             responseStream.write(contactValidationJson.getBytes(Charset.forName("UTF-8")));
         } catch (Exception e) {
+            /* Было в исходном проекте:
             System.out.println("error in GetAllContactsServlet GET: ");
+             */
+            System.out.println("error in AddContactServlet POST: ");
             e.printStackTrace();
         }
     }
