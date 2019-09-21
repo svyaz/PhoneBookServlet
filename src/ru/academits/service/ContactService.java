@@ -22,6 +22,7 @@ public class ContactService {
     public ContactValidation validateContact(Contact contact) {
         ContactValidation contactValidation = new ContactValidation();
         contactValidation.setValid(true);
+
         if (contact.getFirstName().isEmpty()) {
             contactValidation.setValid(false);
             contactValidation.setError("Поле Имя должно быть заполнено.");
@@ -54,6 +55,17 @@ public class ContactService {
             contactDao.add(contact);
         }
         return contactValidation;
+    }
+
+    public ContactsDeletion deleteContacts(List<Integer> idsList) {
+        ContactsDeletion contactsDeletion = new ContactsDeletion();
+        int deletedContactsNumber = contactDao.deleteContacts(idsList);
+        contactsDeletion.setDeleteNumber(deletedContactsNumber);
+
+        if (deletedContactsNumber == 0) {
+            contactsDeletion.setError("Ни одного контакта не удалено.");
+        }
+        return contactsDeletion;
     }
 
     public List<Contact> getAllContacts() {

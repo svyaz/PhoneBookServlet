@@ -15,6 +15,11 @@
     <servlet-class>ru.academits.servlet.AddContactServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>DeleteContactsServlet</servlet-name>
+    <servlet-class>ru.academits.servlet.DeleteContactsServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>getAllContactsServlet</servlet-name>
     <url-pattern>/phonebook/get/all</url-pattern>
@@ -23,5 +28,10 @@
   <servlet-mapping>
     <servlet-name>AddContactsServlet</servlet-name>
     <url-pattern>/phonebook/add</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DeleteContactsServlet</servlet-name>
+    <url-pattern>/phonebook/delete</url-pattern>
   </servlet-mapping>
 </web-app>

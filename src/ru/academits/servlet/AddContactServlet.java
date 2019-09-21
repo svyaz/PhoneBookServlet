@@ -26,6 +26,7 @@ public class AddContactServlet extends HttpServlet {
             Contact contact = contactConverter.convertFormJson(contactJson);
 
             ContactValidation contactValidation = phoneBookService.addContact(contact);
+
             String contactValidationJson = contactValidationConverter.convertToJson(contactValidation);
             if (!contactValidation.isValid()) {
                 resp.setStatus(500);
