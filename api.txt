@@ -1,0 +1,13 @@
+/phonebook/get/all  GET
+resp -> {id: 1, firstName: "123", lastName: "456", phone: "9123456789", important: false}
+
+/phonebook/add  POST
+req ->  {"firstName":"543","lastName":"213","phone":"0987654321","checked":false,"shown":true}
+resp -> {valid: true}
+        {valid: false, error: "error text"}
+
+/phonebook/delete   POST
+req ->  [1, ... , N] (массив id-ников)
+resp -> {deleteNumber: N}
+        {deleteNumber: 0, error: "error text"}
+

@@ -55,8 +55,8 @@ new Vue({
                 data: JSON.stringify(contact)
             }).done(function () {
                 self.serverValidation = false;
-            }).fail(function (ajaxRequest) {
-                var contactValidation = JSON.parse(ajaxRequest.responseText);
+            }).fail(function (resp) {
+                var contactValidation = JSON.parse(resp.responseText);
                 self.serverError = contactValidation.error;
                 self.serverValidation = true;
             }).always(function () {
@@ -67,6 +67,25 @@ new Vue({
             self.lastName = "";
             self.phone = "";
             self.validation = false;
+        },
+        deleteContact: function(id) {
+            console.log("id=" + id);
+            var self = this;
+
+            $.ajax({
+                type: "POST",
+                url: "/phonebook/delete",
+                data: JSON.stringify([id])
+            }).done(function () {
+                console.log("deleted");
+                self.serverValidation = false;
+            }).fail(function (resp) {
+                var deletionStatus = JSON.parse(resp.responseText);
+                self.serverError = deletionStatus.error;
+                self.serverValidation = true;
+            }).always(function () {
+                self.loadData();
+            });
         },
         loadData: function () {
             var self = this;
