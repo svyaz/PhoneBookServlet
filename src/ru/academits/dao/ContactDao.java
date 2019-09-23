@@ -31,6 +31,16 @@ public class ContactDao {
         return contactList;
     }
 
+    public List<Contact> getFilteredContacts(String filterString) {
+        return contactList
+                .stream()
+                .filter(c -> (c.getFirstName().contains(filterString) ||
+                        c.getLastName().contains(filterString) ||
+                        c.getPhone().contains(filterString)))
+                .collect(Collectors.toList());
+        //TODO сделать регистронезависимую фильтрацию
+    }
+
     public void add(Contact contact) {
         contact.setId(getNewId());
         contactList.add(contact);
@@ -38,6 +48,7 @@ public class ContactDao {
 
     /**
      * Deletes all contacts in contactList which id contains in specified idsList.
+     *
      * @param idsList list of contacts identifier to delete.
      * @return number of deleted contacts.
      */

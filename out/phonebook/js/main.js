@@ -58172,7 +58172,8 @@ var jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
 
 function PhoneBookService() {
   this.getContacts = function (searchString) {
-    return jquery_default.a.get("/phonebook/get/all" + searchString);
+    var url = searchString === '' ? "/phonebook/get/all" : "/phonebook/get/filter?s=" + searchString;
+    return jquery_default.a.get(url);
   };
 
   this.addContact = function (contact) {
