@@ -15,12 +15,19 @@ public class ContactDao {
     private AtomicInteger idSequence = new AtomicInteger(0);
 
     public ContactDao() {
-        Contact contact = new Contact();
-        contact.setId(getNewId());
-        contact.setFirstName("Иван");
-        contact.setLastName("Иванов");
-        contact.setPhone("9123456789");
-        contactList.add(contact);
+        Contact contact1 = new Contact();
+        contact1.setId(getNewId());
+        contact1.setFirstName("Иван");
+        contact1.setLastName("Иванов");
+        contact1.setPhone("9123456789");
+        contactList.add(contact1);
+
+        Contact contact2 = new Contact();
+        contact2.setId(getNewId());
+        contact2.setFirstName("Василий");
+        contact2.setLastName("Пупкин");
+        contact2.setPhone("913-987-6543");
+        contactList.add(contact2);
     }
 
     private int getNewId() {
@@ -31,14 +38,21 @@ public class ContactDao {
         return contactList;
     }
 
+    /**
+     * Get filtered contacts list where firstName or lastName or phone contains
+     * specified string.
+     *
+     * @param filterString - string to filter with.
+     * @return filtered contacts list.
+     */
     public List<Contact> getFilteredContacts(String filterString) {
+        String lowerCaseFilterString = filterString.toLowerCase();
         return contactList
                 .stream()
-                .filter(c -> (c.getFirstName().contains(filterString) ||
-                        c.getLastName().contains(filterString) ||
-                        c.getPhone().contains(filterString)))
+                .filter(c -> (c.getFirstName().toLowerCase().contains(lowerCaseFilterString) ||
+                        c.getLastName().toLowerCase().contains(lowerCaseFilterString) ||
+                        c.getPhone().toLowerCase().contains(lowerCaseFilterString)))
                 .collect(Collectors.toList());
-        //TODO сделать регистронезависимую фильтрацию
     }
 
     public void add(Contact contact) {
