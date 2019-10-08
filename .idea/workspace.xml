@@ -7,8 +7,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e961fee-00eb-4677-9e84-53f7e16d643c" name="Default" comment="Fix css">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/phonebook_tomcat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/phonebook_tomcat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/bootstrap.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/catalina-tasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/catalina.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/catalina.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/commons-daemon-native.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/commons-daemon.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/configtest.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/configtest.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/daemon.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/digest.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/digest.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/setclasspath.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/setclasspath.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/shutdown.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/shutdown.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/startup.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/startup.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/tomcat-juli.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/tomcat-native.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/tool-wrapper.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/tool-wrapper.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/version.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/bin/version.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/conf/catalina.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/conf/catalina.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/conf/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/conf/server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/annotations-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/catalina-ant.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/catalina-ha.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/catalina-tribes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/catalina.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/el-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/jasper-el.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/jasper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/jsp-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/servlet-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-coyote.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-dbcp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-i18n-es.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-i18n-fr.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-i18n-ja.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-jdbc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/tomcat-util.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/lib/websocket-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tomcat/temp/safeToDelete.tmp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tomcat/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,21 +73,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="66" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/academits/servlet/GetAllContactsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/phonebook_tomcat.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -58,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -66,6 +111,15 @@
                 <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -156,7 +210,13 @@
             <path>
               <item name="PhoneBookServlet" type="b2602c69:ProjectViewProjectNode" />
               <item name="PhoneBookServlet" type="462c0819:PsiDirectoryNode" />
-              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhoneBookServlet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhoneBookServlet" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="runConfigurations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PhoneBookServlet" type="b2602c69:ProjectViewProjectNode" />
@@ -392,7 +452,7 @@
       <workItem from="1557939770803" duration="3254000" />
       <workItem from="1568918554952" duration="5088000" />
       <workItem from="1568996916910" duration="52016000" />
-      <workItem from="1570555983606" duration="654000" />
+      <workItem from="1570555983606" duration="1600000" />
     </task>
     <task id="LOCAL-00001" summary="Convert to vue">
       <created>1557942663531</created>
@@ -412,7 +472,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61012000" />
+    <option name="totallyTimeSpent" value="61958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,7 +485,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="809" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2074392" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -1501,13 +1560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/servlet-api-2.5.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -1515,20 +1567,6 @@
           <folding>
             <element signature="method#doOptions#0;class#HttpServlet#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/academits/servlet/GetAllContactsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1556,6 +1594,37 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/academits/servlet/GetAllContactsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/phonebook_tomcat.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

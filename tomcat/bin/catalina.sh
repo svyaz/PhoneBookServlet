@@ -18,6 +18,9 @@
 # -----------------------------------------------------------------------------
 # Control Script for the CATALINA Server
 #
+# For supported commands call "catalina.sh help" or see the usage section at
+# the end of this file.
+#
 # Environment Variable Prerequisites
 #
 #   Do not set the variables in this script. Instead put them into a script
@@ -228,7 +231,7 @@ fi
 
 # Bugzilla 37848: When no TTY is available, don't output to console
 have_tty=0
-if [ "`tty`" != "not a tty" ]; then
+if [ -t 0 ]; then
     have_tty=1
 fi
 
@@ -296,7 +299,7 @@ if [ -z "$USE_NOHUP" ]; then
 fi
 unset _NOHUP
 if [ "$USE_NOHUP" = "true" ]; then
-    _NOHUP=nohup
+    _NOHUP="nohup"
 fi
 
 # Add the JAVA 9 specific start-up parameters required by Tomcat
@@ -514,7 +517,7 @@ elif [ "$1" = "stop" ] ; then
     fi
   fi
 
-  eval "\"$_RUNJAVA\"" $JAVA_OPTS \
+  eval "\"$_RUNJAVA\"" $LOGGING_MANAGER $JAVA_OPTS \
     -D$ENDORSED_PROP="\"$JAVA_ENDORSED_DIRS\"" \
     -classpath "\"$CLASSPATH\"" \
     -Dcatalina.base="\"$CATALINA_BASE\"" \
